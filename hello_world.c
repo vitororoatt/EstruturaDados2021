@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("Olar troxas");
+    printf("ola world");
     return 0;
 }
