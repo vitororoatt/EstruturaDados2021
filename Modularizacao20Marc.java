@@ -23,6 +23,18 @@ public class Modularizacao20Marc {
         System.out.printf("A media do aluno eh = %.2f", totalNotas / notas.length);
     }
     
+    static void vetorOrganizado(){
+        int i, v[] = new int[50];
+
+        for(i = 0; i < 50; i++){
+            v[i] = 101 + i;
+        }
+
+        for(i = 0; i < 50; i++){
+            System.out.println("Posicao " + (i+1) + " - Valor " + (v[i]));
+        }
+    }
+
     public static void main(String[] args) {
         int opc;
         Scanner entrada = new Scanner(System.in);
@@ -33,11 +45,11 @@ public class Modularizacao20Marc {
 
             switch(opc){
                 case 1:
-                calculaMedia();
-                break;
+                    calculaMedia();
+                    break;
 
                 case 2:
-                System.out.print("Opcao 2");
+                    vetorOrganizado(); 
             }
         } while(opc != 6);
 
