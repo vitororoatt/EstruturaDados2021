@@ -35,6 +35,13 @@ public class Modularizacao20Marc {
         }
     }
 
+    static void maiorNumero(){
+        int num1, num2;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.printf("Digite o primeiro numero - ");
+        
+    }
     public static void main(String[] args) {
         int opc;
         Scanner entrada = new Scanner(System.in);
@@ -50,6 +57,11 @@ public class Modularizacao20Marc {
 
                 case 2:
                     vetorOrganizado(); 
+                    break;
+
+                case 3:
+                    maiorNumero();
+                    break;
             }
         } while(opc != 6);
 
