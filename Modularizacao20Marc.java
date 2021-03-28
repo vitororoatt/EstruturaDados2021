@@ -36,12 +36,24 @@ public class Modularizacao20Marc {
     }
 
     static void maiorNumero(){
-        int num1, num2;
+        double num1, num2;
         Scanner entrada = new Scanner(System.in);
 
         System.out.printf("Digite o primeiro numero - ");
-        
+        num1 = entrada.nextDouble();
+
+        System.out.printf("Digite o segundo numero - ");
+        num2 = entrada.nextDouble();
+
+        if(num1 > num2){
+            System.out.printf("O numero %.2f foi o maior digitado", num1);
+        }
+        else{
+            System.out.printf("O numero %.2f foi o maior digitado", num2);
+        }
     }
+    
+    
     public static void main(String[] args) {
         int opc;
         Scanner entrada = new Scanner(System.in);
@@ -62,6 +74,11 @@ public class Modularizacao20Marc {
                 case 3:
                     maiorNumero();
                     break;
+
+                case 4:
+                    calcularMedia();
+                    break;
+
             }
         } while(opc != 6);
 
