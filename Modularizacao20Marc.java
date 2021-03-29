@@ -69,11 +69,20 @@ public class Modularizacao20Marc {
     }
 
     static void somaInteiro(){
-        int inteiro;
+        int total = 0;
+        String inteiro;
         Scanner entrada = new Scanner(System.in);
 
         System.out.println("Digite um valor inteiro maior que 0");
+        inteiro = entrada.nextLine();
 
+        String numSeparado[] = inteiro.split("");
+
+        for(int i = 0; i < numSeparado.length; i++) {
+            total = total + Integer.parseInt(numSeparado[i]);	
+        }
+
+        System.out.println("Algarismos somados = " + total);
     }
 
     public static void main(String[] args) {
@@ -83,7 +92,7 @@ public class Modularizacao20Marc {
         Scanner entrada = new Scanner(System.in);
         
         do{
-            System.out.print("\n\nDigite a opcao desejada, onde:\n1 - Calcular Media\n6 - Sair\nOpcao desejada - ");
+            System.out.print("\n\nDigite a opcao desejada, onde:\n1 - Calcular Media\n2 - Vetor Organizado\n3 - Maior Valor\n4 - Media Ponderada/Aritmetica\n5 - Soma de Algarismos\n6 - Sair\nOpcao desejada - ");
             opc = entrada.nextInt();
 
             switch(opc){
