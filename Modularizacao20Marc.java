@@ -53,9 +53,33 @@ public class Modularizacao20Marc {
         }
     }
     
-    
+    static void calcularMedia(double [] v, char tipoMedia){
+        double mediaTotal = 0;
+        if(tipoMedia == 'p'){
+            mediaTotal = ((v[0] * 5) + (v[1] * 3) + (v[2] * 2)) / 10;
+            System.out.printf("Nota final (Media Aritmetica) - %.2f", mediaTotal);
+        }
+        else if(tipoMedia == 'a'){
+            mediaTotal = (v[0] + v[1] + v[2]) / 3;
+            System.out.printf("Nota final (Media Aritmetica) - %.2f", mediaTotal);
+        }
+        else{
+            System.out.print("Tipo de Media nao reconhecido");
+        }
+    }
+
+    static void somaInteiro(){
+        int inteiro;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite um valor inteiro maior que 0");
+
+    }
+
     public static void main(String[] args) {
-        int opc;
+        int opc, i;
+        char tipoMedia;
+        double v[] = new double[3];
         Scanner entrada = new Scanner(System.in);
         
         do{
@@ -74,9 +98,21 @@ public class Modularizacao20Marc {
                 case 3:
                     maiorNumero();
                     break;
-
+                
                 case 4:
-                    calcularMedia();
+                    for(i = 0; i < v.length; i++){
+                        System.out.println("Digite a nota " + (i + 1));
+                        v[i] = entrada.nextDouble();
+                    }
+                    System.out.println("Digite P para Media Ponderada e A para Media Aritmetica");
+                    entrada.nextLine();
+                    tipoMedia = entrada.nextLine().toLowerCase().charAt(0);
+
+                    calcularMedia(v, tipoMedia);
+                    break;
+                
+                case 5:
+                    somaInteiro();
                     break;
 
             }
