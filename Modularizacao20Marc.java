@@ -53,7 +53,7 @@ public class Modularizacao20Marc {
         }
     }
     
-    static void calcularMedia(double [] v, char tipoMedia){
+    static void diferentesMedias(double [] v, char tipoMedia){
         double mediaTotal = 0;
         if(tipoMedia == 'p'){
             mediaTotal = ((v[0] * 5) + (v[1] * 3) + (v[2] * 2)) / 10;
@@ -117,7 +117,7 @@ public class Modularizacao20Marc {
                     entrada.nextLine();
                     tipoMedia = entrada.nextLine().toLowerCase().charAt(0);
 
-                    calcularMedia(v, tipoMedia);
+                    diferentesMedias(v, tipoMedia);
                     break;
                 
                 case 5:
