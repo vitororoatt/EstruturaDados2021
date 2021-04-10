@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class vroatt_20Marc {
+    static void calculaMedia(){
+        int entTamanho, i;
+        double entNotas, totalNotas = 0;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.print("Quantas notas serao usadas para calcular a media? ");
+        entTamanho = entrada.nextInt();
+        double notas[] = new double[entTamanho];
+
+        for (i = 0; i<notas.length; i++){
+            System.out.printf("Digite a nota %d - ", i+1);
+            entNotas = entrada.nextDouble();
+            notas[i] = entNotas;
+        }
+
+        for (i = 0; i<notas.length; i++){
+            totalNotas = totalNotas + notas[i];
+        }
+
+        System.out.printf("A media do aluno eh = %.2f", totalNotas / notas.length);
+    }
+    
+    static void vetorOrganizado(){
+        int i, v[] = new int[50];
+
+        for(i = 0; i < 50; i++){
+            v[i] = 101 + i;
+        }
+
+        for(i = 0; i < 50; i++){
+            System.out.println("Posicao " + (i+1) + " - Valor " + (v[i]));
+        }
+    }
+
+    static void maiorNumero(){
+        int num1, num2;
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.printf("Digite o primeiro numero - ");
+        
+    }
+    public static void main(String[] args) {
+        int opc;
+        Scanner entrada = new Scanner(System.in);
+        
+        do{
+            System.out.print("\n\nDigite a opcao desejada, onde:\n1 - Calcular Media\n6 - Sair\nOpcao desejada - ");
+            opc = entrada.nextInt();
+
+            switch(opc){
+                case 1:
+                    calculaMedia();
+                    break;
+
+                case 2:
+                    vetorOrganizado(); 
+                    break;
+
+                case 3:
+                    maiorNumero();
+                    break;
+            }
+        } while(opc != 6);
+
+    }
+}
