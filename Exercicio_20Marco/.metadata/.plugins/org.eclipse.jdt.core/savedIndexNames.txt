@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+E:\FATEC\3Semestre\Estrutura_de_dados\Git\EstruturaDados2021\Exercicio_20Marco\.metadata\.plugins\org.eclipse.jdt.core
+2729316953.index
