@@ -1,8 +1,21 @@
+import java.util.Random;
+
 public class Lampada{
-    private String tipo = "Ola";
+    private String tipo;
     private int tensao;
     private int potencia;
-    private boolean status = true;
+    private boolean status;
+
+    public Lampada(String tipo, int tensao, int potencia){
+        this.tipo = tipo;
+        this.tensao = tensao;
+        this.potencia = potencia;
+
+        Random random = new Random();
+        boolean statusRandom = random.nextBoolean();
+
+        this.status = statusRandom;
+    }
     
     // getter/setter tipo
     public String getTipo() {
@@ -36,6 +49,11 @@ public class Lampada{
 		this.status = status;
 	}
 
+    @Override
+    public String toString(){
+        return "Tipo: " + this.tipo + ", Tensao: " + this.tensao + ", Potencia: " + this.potencia + ", Status: " + this.Status;
+    }
+    
     void acender(){
         if(this.status){
             System.out.print("A lampadas selecionada ja esta acessa");
@@ -43,6 +61,25 @@ public class Lampada{
         else{
             this.status = true;
             System.out.print("A lampada selecionada foi acessa");
+        }
+    }
+
+    void apagar(){
+        if(this.status){
+            this.status = false;
+            System.out.print("A lampadas selecionada foi apagada");
+        }
+        else{
+            System.out.print("A lampada selecionada ja esta apagada");
+        }
+    }
+
+    void verificarStatus(){
+        if(this.status){
+            System.out.println("A lampada selecionada esta acessa");
+        }
+        else{
+            System.out.println("A lampada selecionada esta apagada");
         }
     }
     
