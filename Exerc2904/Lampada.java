@@ -1,8 +1,8 @@
-public class Lampada() {
-    private String tipo;
+public class Lampada{
+    private String tipo = "Ola";
     private int tensao;
     private int potencia;
-    private int status;
+    private boolean status = true;
     
     // getter/setter tipo
     public String getTipo() {
@@ -29,10 +29,21 @@ public class Lampada() {
 	}
 
     // getter/setter tensao
-    public int getStatus() {
+    public boolean getStatus() {
 		return status;
 	}
-    public void setStatus(int status) {
+    public void setStatus(boolean status) {
 		this.status = status;
 	}
+
+    void acender(){
+        if(this.status){
+            System.out.print("A lampadas selecionada ja esta acessa");
+        }
+        else{
+            this.status = true;
+            System.out.print("A lampada selecionada foi acessa");
+        }
+    }
+    
 }
