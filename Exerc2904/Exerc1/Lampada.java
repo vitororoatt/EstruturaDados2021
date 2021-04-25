@@ -7,14 +7,14 @@ public class Lampada{
     private boolean status;
 
     public Lampada(String tipo, int tensao, int potencia){
-        this.tipo = tipo;
-        this.tensao = tensao;
-        this.potencia = potencia;
+        setTipo(tipo);
+        setTensao(tensao);
+        setPotencia(potencia);
 
         Random random = new Random();
         boolean statusRandom = random.nextBoolean();
 
-        this.status = statusRandom;
+        setStatus(statusRandom);
     }
     
     // getter/setter tipo
@@ -55,18 +55,18 @@ public class Lampada{
     }
     
     void acender(){
-        if(this.status){
+        if(status){
             System.out.print("A lampadas selecionada ja esta acessa");
         }
         else{
-            this.status = true;
+            setStatus(true);
             System.out.print("A lampada selecionada foi acessa");
         }
     }
 
     void apagar(){
-        if(this.status){
-            this.status = false;
+        if(status){
+            setStatus(false);
             System.out.print("A lampadas selecionada foi apagada");
         }
         else{
@@ -75,7 +75,7 @@ public class Lampada{
     }
 
     void verificarStatus(){
-        if(this.status){
+        if(status){
             System.out.println("A lampada selecionada esta acessa");
         }
         else{
