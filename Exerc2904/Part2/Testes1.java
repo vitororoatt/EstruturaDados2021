@@ -1,35 +1,35 @@
 public class Testes1 {
 
     public static void main(String[] args) {
-        /*byte a = 4;
+
+        byte a = 40;
         System.out.println(a);
 
-        byte b = 5;
+        byte b = 50;
         System.out.println(b);
 
-        byte c = 10;
+        byte c = 100;
         System.out.println(c);
 
-        byte d = (byte)(a * b * 100);
+        int d = a * b / c; // exercicio D - Vai Funcionar
         System.out.println(d);
 
+        //byte e = a * b / c; // exercicio E - ERRO!
+        //System.out.println(e);
+
         byte e = 50;
-        System.out.println(e);
-
         byte f = e * 6;
-        System.out.println(f);*/
 
-        byte b = 42;
-        char c = 'a';
-        short s = 1024;
-        int i = 50000;
-        float f = 5.67f;
-        double d = 0.1234;
         System.out.println(f);
-        System.out.println((f * b));
-        System.out.println((i / c));
+        /*Não. Para o código funcionar seria
+        necessário fazer a conversão de int para byte, transformando
+        a linha “g.” em: byte f = (byte)(e*6). Mesmo assim, o valor
+        que resultaria não seria 300, uma vez que o tamanho máximo
+        do tipo byte é de 8 bits, ou 2⁷-1 (127).*/
 
-        //System.out.println((f * b) + (i / c));
+
+        
+
     }
 
 }

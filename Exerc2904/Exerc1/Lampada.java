@@ -12,11 +12,9 @@ public class Lampada{
         setPotencia(potencia);
 
         Random random = new Random();
-        boolean statusRandom = random.nextBoolean();
-
-        setStatus(statusRandom);
+        setStatus(random.nextBoolean());
     }
-    
+
     // getter/setter tipo
     public String getTipo() {
 		return tipo;
