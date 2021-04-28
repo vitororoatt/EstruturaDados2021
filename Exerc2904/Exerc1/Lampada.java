@@ -51,7 +51,7 @@ public class Lampada{
 
     @Override
     public String toString(){
-        return "Tipo: " + this.tipo + ", Tensao: " + this.tensao + ", Potencia: " + this.potencia + ", Status: " + this.Status;
+        return "Tipo: " + this.tipo + ", Tensao: " + this.tensao + ", Potencia: " + this.potencia + ", Status: " + this.status;
     }
     
     void acender(){
