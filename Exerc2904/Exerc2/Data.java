@@ -1,6 +1,6 @@
 public class Data{
-    private int mes;
     private int dia;
+    private int mes;
     private int ano;
 
     public Data(int dia, int mes, int ano){
@@ -10,7 +10,7 @@ public class Data{
     }
 
     // getter/setter dia
-    public int getDia() {
+    public int getDia() { // dia
 		return dia;
 	}
     public void setDia(int dia) {
