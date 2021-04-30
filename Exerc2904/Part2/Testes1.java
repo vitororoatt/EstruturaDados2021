@@ -18,7 +18,7 @@ public class Testes1 {
         //System.out.println(e);
 
         byte e = 50;
-        byte f = e * 6;
+        //byte f = e * 6; - ERRO!
 
         System.out.println(f);
         /*Não. Para o código funcionar seria
