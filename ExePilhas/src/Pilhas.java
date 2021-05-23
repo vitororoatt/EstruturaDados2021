@@ -3,6 +3,7 @@ public class Pilhas {
 	private int dados[];
 	private int topo;
 	private int capacidade;
+    private int base;
 	
 	public Pilhas () {
 		this(10);
@@ -10,6 +11,7 @@ public class Pilhas {
 	public Pilhas (int capacidade) {
 		this.dados = new int[capacidade];
 		this.topo = 0;
+        this.base = 0;
 		this.capacidade = capacidade;
 	}
 
@@ -20,6 +22,9 @@ public class Pilhas {
             }
         }
         return "Essa pilha e forte";
+    }
+    public int desempilhaDeBaixo(){
+        return this.dados[++base];
     }
 
 	public boolean estaCheia() {
@@ -37,7 +42,7 @@ public class Pilhas {
 		//return this.dados[this.topo];
 	}
 	public int tamanho() {
-		return this.topo;
+		return this.topo - this.base; // tamanho é a diferença entre Topo e Base
 	}
 	//consulta do elemento do topo da pilha
 	public int consultaTopo() {
@@ -51,7 +56,7 @@ public class Pilhas {
 		}
 		else {
 			sPilha = sPilha + "Capacidade: " + this.capacidade + " Tamanho: " + this.tamanho() + "\n";
-			for( int i=this.topo-1; i>=0; i--) {
+			for( int i=this.topo-1; i>=this.base; i--) { // I vai de base a topo
 				sPilha = sPilha + this.dados[i]+ " ";
 			}
 		}
