@@ -34,5 +34,7 @@ public class TestePilhas {
         System.out.println(PilhaForte);
         PilhaForte.pull(); // Desempilha o último item da pilha (topo)
         System.out.println(PilhaForte);
+
+        
     }
 }
