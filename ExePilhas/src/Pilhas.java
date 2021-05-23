@@ -13,13 +13,14 @@ public class Pilhas {
 		this.capacidade = capacidade;
 	}
 
-    public void empilhaForte() {
+    public String empilhaForte(){
+        int teste = 0;
         for(int i = 0; i < this.capacidade; i++){
             if(this.dados[i] > this.dados[i+1]){
-                
+                return "Essa pilha não é forte";
             }
         }
-
+        return "Essa pilha é forte";
     }
 
 	public boolean estaCheia() {
