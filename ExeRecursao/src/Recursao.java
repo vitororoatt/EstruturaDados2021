@@ -18,6 +18,8 @@ public class Recursao {
         return numPares(n-1); // recursão - verificando o numero anterior
     }
 
+	// exercicio 3
+
 	public static void main(String[] args) {
 		Random gerado = new Random();
 
