@@ -14,7 +14,7 @@ public class Pilhas {
 	}
 
     public String empilhaForte(){
-        for(int i = 0; i < this.capacidade; i++){
+        for(int i = 0; i < this.topo - 1; i++){
             if(this.dados[i] < this.dados[i+1]){
                 return "Essa pilha nao e forte";
             }
