@@ -52,7 +52,7 @@ public class Pilhas {
 	public String toString() {
 		String sPilha = "Pilha: ";
 		if (this.estaVazia()) {
-			sPilha = sPilha + "est� vazia";
+			sPilha = sPilha + "esta vazia";
 		}
 		else {
 			sPilha = sPilha + "Capacidade: " + this.capacidade + " Tamanho: " + this.tamanho() + "\n";
