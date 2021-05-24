@@ -10,7 +10,7 @@ public class PilhaBinaria {
         int aux = decimal;
         int capacidade = 0, resto;
         do{
-			// contar quantas vezes o numero decimal é divisivel por 2
+			// contar quantas vezes o numero decimal � divisivel por 2
             aux = aux / 2;
             capacidade++;
         }while(aux >= 1);
@@ -18,7 +18,7 @@ public class PilhaBinaria {
         this.dados = new int[capacidade]; // crio o vetor com 'capacidade'
         aux = decimal;
         do{
-			// faz a operação de resto para obter os numeros binarios
+			// faz a operacao de resto para obter os numeros binarios
             resto = (int) aux % 2;
             push(resto); // armazena o resto (1 ou 0) no vetor binario
             aux = (int) aux / 2; // divide o numero decimal por 2 para o proximo laço
