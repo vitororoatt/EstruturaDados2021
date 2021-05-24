@@ -1,3 +1,4 @@
+//exercicio 1
 import java.util.Random;
 
 public class TestePilhas {
@@ -10,7 +11,7 @@ public class TestePilhas {
         } 
 
         System.out.println(PilhaForte); // mostra a pilha
-        System.out.println(PilhaForte.empilhaForte()); // verifica se Ã© forte
+        System.out.println(PilhaForte.empilhaForte()); // verifica se é forte
 
         for(int i = 0; i < 10; i++){ // esvazia a pilha
             PilhaForte.pull();
@@ -27,12 +28,12 @@ public class TestePilhas {
         PilhaForte.push(3);
         PilhaForte.push(2);
         PilhaForte.push(1);
-        System.out.println(PilhaForte); // Mostra que a pilha Ã© forte
+        System.out.println(PilhaForte); // Mostra que a pilha é forte
         System.out.println(PilhaForte.empilhaForte());
 
         PilhaForte.desempilhaDeBaixo(); // Desempilha o primeiro item da pilha (indice 0 - ou base)
         System.out.println(PilhaForte);
-        PilhaForte.pull(); // Desempilha o Ãºltimo item da pilha (topo)
+        PilhaForte.pull(); // Desempilha o último item da pilha (topo)
         System.out.println(PilhaForte);
 
         

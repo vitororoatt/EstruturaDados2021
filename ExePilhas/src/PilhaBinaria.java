@@ -1,3 +1,4 @@
+//exercicio 2
 public class PilhaBinaria {
     private int dados[];
 	private int topo;
@@ -21,7 +22,7 @@ public class PilhaBinaria {
 			// faz a operacao de resto para obter os numeros binarios
             resto = (int) aux % 2;
             push(resto); // armazena o resto (1 ou 0) no vetor binario
-            aux = (int) aux / 2; // divide o numero decimal por 2 para o proximo laÃ§o
+            aux = (int) aux / 2; // divide o numero decimal por 2 para o proximo número
         }while(aux > 1);
         push(aux); // armazena o digito final (sobra de aux)
 	}

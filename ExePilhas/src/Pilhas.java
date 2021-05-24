@@ -1,4 +1,4 @@
-
+//exercício 1
 public class Pilhas {
 	private int dados[];
 	private int topo;
@@ -42,7 +42,7 @@ public class Pilhas {
 		//return this.dados[this.topo];
 	}
 	public int tamanho() {
-		return this.topo - this.base; // tamanho Ã© a diferenÃ§a entre Topo e Base
+		return this.topo - this.base; // tamanho é a diferençaa entre Topo e Base
 	}
 	//consulta do elemento do topo da pilha
 	public int consultaTopo() {
