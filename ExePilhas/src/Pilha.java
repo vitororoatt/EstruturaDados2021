@@ -1,4 +1,4 @@
-//exerc�cio 1
+//exercicio 1
 public class Pilha {
 	private int dados[];
 	private int topo;
@@ -16,11 +16,23 @@ public class Pilha {
     public String empilhaForte(){
         for(int i = 0; i < this.topo - 1; i++){
             if(this.dados[i] < this.dados[i+1]){
-                return "Essa pilha nao e forte";
+                return "Essa pilha nao e forte \n";
             }
         }
-        return "Essa pilha e forte";
+        return "Essa pilha e forte \n";
     }
+	public String desempilhaDeBaixo(){
+		if(estaVazia()){
+			return "Essa pilha está vazia";
+		}
+		if(this.topo == 1){
+			return "Essa pilha só tem um item";
+		}
+		this.topo--;
+		int cartaRemovida = this.dados[topo-1];
+		this.dados[topo-1] = this.dados[topo];
+		return "" + cartaRemovida;
+	}
 
 	public boolean estaCheia() {
 		return this.topo == this.capacidade;

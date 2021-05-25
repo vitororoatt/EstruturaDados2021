@@ -30,5 +30,9 @@ public class TestePilha {
         PilhaForte.push(1);
         System.out.println(PilhaForte); // Mostra que a pilha eh forte
         System.out.println(PilhaForte.empilhaForte());
+
+        System.out.println(PilhaForte);
+        System.out.println(PilhaForte.desempilhaDeBaixo());
+        System.out.println(PilhaForte);
     }
 }
