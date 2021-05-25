@@ -1,3 +1,4 @@
+//exercicio 1
 import java.util.Random;
 
 public class TestePilhas {
@@ -10,7 +11,7 @@ public class TestePilhas {
         } 
 
         System.out.println(PilhaForte); // mostra a pilha
-        System.out.println(PilhaForte.empilhaForte()); // verifica se é forte
+        System.out.println(PilhaForte.empilhaForte()); // verifica se eh forte
 
         for(int i = 0; i < 10; i++){ // esvazia a pilha
             PilhaForte.pull();
@@ -27,8 +28,7 @@ public class TestePilhas {
         PilhaForte.push(3);
         PilhaForte.push(2);
         PilhaForte.push(1);
-        System.out.println(PilhaForte); // Mostra que a pilha é forte
+        System.out.println(PilhaForte); // Mostra que a pilha eh forte
         System.out.println(PilhaForte.empilhaForte());
-
     }
 }

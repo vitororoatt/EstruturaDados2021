@@ -1,4 +1,4 @@
-
+//exerc�cio 1
 public class Pilhas {
 	private int dados[];
 	private int topo;
