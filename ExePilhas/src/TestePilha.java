@@ -1,9 +1,9 @@
 //exercicio 1
 import java.util.Random;
 
-public class TestePilhas {
+public class TestePilha {
     public static void main(String[] args) {
-        Pilhas PilhaForte = new Pilhas();
+        Pilha PilhaForte = new Pilha();
         Random gerador = new Random();
 
         for(int i = 0; i < 10; i++){ // preenchimento randomico

@@ -1,13 +1,13 @@
 //exerc�cio 1
-public class Pilhas {
+public class Pilha {
 	private int dados[];
 	private int topo;
 	private int capacidade;
 	
-	public Pilhas () {
+	public Pilha () {
 		this(10);
 	}	
-	public Pilhas (int capacidade) {
+	public Pilha (int capacidade) {
 		this.dados = new int[capacidade];
 		this.topo = 0;
 		this.capacidade = capacidade;
