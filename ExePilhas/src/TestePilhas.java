@@ -30,11 +30,5 @@ public class TestePilhas {
         System.out.println(PilhaForte); // Mostra que a pilha é forte
         System.out.println(PilhaForte.empilhaForte());
 
-        PilhaForte.desempilhaDeBaixo(); // Desempilha o primeiro item da pilha (indice 0 - ou base)
-        System.out.println(PilhaForte);
-        PilhaForte.pull(); // Desempilha o último item da pilha (topo)
-        System.out.println(PilhaForte);
-
-        
     }
 }

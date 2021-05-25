@@ -38,7 +38,7 @@ public class PilhaVetor {
 	public String toString() {
 		String sPilha = "Pilha: ";
 		if (this.estaVazia()) {
-			sPilha = sPilha + "está vazia";
+			sPilha = sPilha + "estï¿½ vazia";
 		}
 		else {
 			sPilha = sPilha + "Capacidade: " + this.capacidade + " Tamanho: " + this.tamanho() + "\n";
