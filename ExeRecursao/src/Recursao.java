@@ -3,7 +3,8 @@ import java.util.Random;
 import javax.swing.JOptionPane;
 
 public class Recursao {
-	// exercicio 1
+
+	// Exercicio 1
 	public static int somaDosNumeros (int n){
 		if(n == 0){
 			return 0;
@@ -11,18 +12,18 @@ public class Recursao {
 		return n + somaDosNumeros(n-1);
 	}
 
-	// exercicio 2
+	// Exercicio 2
 	public static int numPares (int n){
-        if(n == 0){ // se o número for 0
-            return 0; // retorna 0
+        if(n == 0){ // Se o numero for igual a 0
+            return 0; // Retorna 0
 		}
-        if(n % 2 == 0){ // se o número for divisivel por 2
-            System.out.println(n); // imprime ele
+        if(n % 2 == 0){ // Se o numero for divisivel por 2
+            System.out.println(n); // Imprime o numero
         }
-        return numPares(n-1); // recursão - verificando o numero anterior
+        return numPares(n-1); // Recursao - verificando o numero anterior
     }
 
-	// exercicio 3
+	// Exercicio 3
 	public static int tribonacci (int n){
 		if(n == 0 || n == 1){
 			return 0;
