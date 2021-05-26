@@ -10,6 +10,7 @@ public class TestePilha {
             PilhaForte.push(gerador.nextInt(10));
         } 
 
+        System.out.println("Exercicio 1-A (Teste de Força da Pilha):\n");
         System.out.println(PilhaForte); // mostra a pilha
         System.out.println(PilhaForte.empilhaForte()); // verifica se eh forte
 
@@ -31,6 +32,7 @@ public class TestePilha {
         System.out.println(PilhaForte); // Mostra que a pilha eh forte
         System.out.println(PilhaForte.empilhaForte());
 
+        System.out.println("Exercicio 1-B (Desempilhar de Baixo):\n");
         System.out.println(PilhaForte);
         System.out.println(PilhaForte.desempilhaDeBaixo());
         System.out.println(PilhaForte);
