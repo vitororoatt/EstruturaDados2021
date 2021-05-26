@@ -3,7 +3,7 @@ public class Estacionamento <T> {
     private int ultimo;
     private int primeiro;
     private int quantidade;
-    const int capacidade = 10;
+    private final int capacidade = 10;
 
     public Estacionamento(){
         this.alameda = (T[]) new Object [10]; // casting do tipo generico para T
@@ -27,12 +27,12 @@ public class Estacionamento <T> {
 	}
 
     public void adicionar (T carro) {
-		this.dados[this.ultimo] = carro;
+		this.alameda[this.ultimo] = carro;
         this.ultimo	= proxima(this.ultimo);
         this.quantidade++;
 	}
     public T remover () {
-		T quemSai = this.dados[this.primeiro];
+		T quemSai = this.alameda[this.primeiro];
         this.primeiro = proxima(this.primeiro);
         this.quantidade--;
         return quemSai;
