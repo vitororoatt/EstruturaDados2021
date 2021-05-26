@@ -38,5 +38,16 @@ public class Estacionamento <T> {
         return quemSai;
 	}
 
+    public int primeiro s() {
+		return this.alameda[this.primeiro];
+	}
+	public int tamanho () {
+		return this.quantidade;
+	}
+	public int ultimo () {
+		return this.alameda[anterior(this.ultimo)];
+	}
+
+    
     
 }
