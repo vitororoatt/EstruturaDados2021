@@ -17,10 +17,10 @@ public class Pilha {
     public String empilhaForte(){
         for(int i = 0; i < this.topo - 1; i++){
             if(this.dados[i] < this.dados[i+1]){
-                return "Essa pilha nao e forte \n";
+                return "Essa pilha nao ้ forte \n";
             }
         }
-        return "Essa pilha e forte \n";
+        return "Essa pilha ้ forte \n";
     }
 	
 	// Exercicio B
@@ -29,7 +29,7 @@ public class Pilha {
 			return "Essa pilha esta vazia";
 		}
 		if(this.topo == 1){
-			return "Essa pilha sรณ tem um item";
+			return "Essa pilha tem apenas um item";
 		}
 		this.topo--;
 		int cartaRemovida = this.dados[topo-1];
