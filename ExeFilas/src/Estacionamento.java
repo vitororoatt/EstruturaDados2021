@@ -31,6 +31,12 @@ public class Estacionamento <T> {
         this.ultimo	= proxima(this.ultimo);
         this.quantidade++;
 	}
+	public T remover (int posicaoCarro) {
+		T quemSai = this.alameda[posicaoCarro];
+		this.primeiro = proxima(posicaoCarro);
+		this.ultimo = anterior(posicaoCarro);
+		return quemSai;
+	}
     public T remover () {
 		T quemSai = this.alameda[this.primeiro];
         this.primeiro = proxima(this.primeiro);
@@ -48,6 +54,21 @@ public class Estacionamento <T> {
 		return this.alameda[anterior(this.ultimo)];
 	}
 
-    
-    
+	@Override
+	public String toString(){
+		String s = "Estacionamento: ";
+		if(estaVazio()){
+			s = s + "Esta Vazio";
+		}
+		else{
+			int i = this.primeiro;
+			do{
+				s = s + this.alameda[i] + " | ";
+				i = proxima(i);
+			}while(i != this.ultimo);
+		}
+		return s;
+	}
+
+	
 }

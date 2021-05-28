@@ -11,4 +11,9 @@ public class Carro {
     public void setPlaca(int placa) {
         this.placa = placa;
     }
+
+    @Override
+    public String toString(){
+        return "Placa: " + this.placa;
+    }
 }
