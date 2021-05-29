@@ -1,12 +1,12 @@
-public class Estacionamento <T> {
-    private T[] alameda;
+public class Estacionamento{
+    private Carro[] alameda;
     private int ultimo;
     private int primeiro;
     private int quantidade;
     private final int capacidade = 10;
 
     public Estacionamento(){
-        this.alameda = (T[]) new Object [10]; // casting do tipo generico para T
+        this.alameda = new Carro[10];
         this.ultimo = 0;
         this.primeiro = 0;
         this.quantidade = 0;
@@ -26,31 +26,34 @@ public class Estacionamento <T> {
 		return (posicao - 1 + this.capacidade) % this.capacidade;
 	}
 
-    public void adicionar (T carro) {
+    public void adicionar (Carro carro) {
 		this.alameda[this.ultimo] = carro;
         this.ultimo	= proxima(this.ultimo);
         this.quantidade++;
 	}
-	public T remover (int posicaoCarro) {
-		T quemSai = this.alameda[posicaoCarro];
+	public Carro remover (int posicaoCarro) {
+		Carro quemSai = this.alameda[posicaoCarro];
+		for(int i = this.primeiro; i < posicaoCarro; i++){
+			this.alameda[i].getClass();
+		}
 		this.primeiro = proxima(posicaoCarro);
 		this.ultimo = anterior(posicaoCarro);
 		return quemSai;
 	}
-    public T remover () {
-		T quemSai = this.alameda[this.primeiro];
+    public Carro remover () {
+		Carro quemSai = this.alameda[this.primeiro];
         this.primeiro = proxima(this.primeiro);
         this.quantidade--;
         return quemSai;
 	}
 
-    public T primeiro () {
+    public Carro primeiro () {
 		return this.alameda[this.primeiro];
 	}
 	public int tamanho () {
 		return this.quantidade;
 	}
-	public T ultimo () {
+	public Carro ultimo () {
 		return this.alameda[anterior(this.ultimo)];
 	}
 
