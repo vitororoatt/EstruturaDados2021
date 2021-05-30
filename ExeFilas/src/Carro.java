@@ -2,9 +2,9 @@ import java.util.Set;
 
 public class Carro {
     private int placa;
-    private int voltas;
+    private int voltas; // vai armazenar quantas voltas o carro deu no quarteirao para outros sairem
 
-    public Carro(int placa){ // redefinindo construtor padrão
+    public Carro(int placa){ // redefinindo construtor padrao
         setPlaca(placa);
     }
 

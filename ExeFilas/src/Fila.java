@@ -1,8 +1,8 @@
 public class Fila {
     // Nesse caso não pude fazer uma fila do tipo generico pois não conseguiria acessar os
     // metodos de Carro, já que, por ser generica, a fila não me permitiria chamar metodos,
-    // já que poderia ser instanciada como qualquer tipo quando fosse chamada na classe.
-    // Como preciso armazenar o tanto de voltas para mostrar quando o carro sair, preciso
+    // já que poderia ser instanciada como qualquer tipo quando fosse chamada na classe e,
+    // como preciso armazenar o tanto de voltas para mostrar quando o carro sair, preciso
     // usar metodos de Carro.
 	private Carro[] dados;
 	private int primeiro;
@@ -52,7 +52,7 @@ public class Fila {
 	}
 	@Override
 	public String toString () {
-		String s = "fila: ";
+		String s = "Fila: ";
 		if (this.estaVazia()) {
 			s = s + "vazia";
 		}
