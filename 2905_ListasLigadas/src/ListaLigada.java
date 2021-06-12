@@ -15,14 +15,14 @@ public class ListaLigada {
 	public boolean listaVazia() {
 		return this.primeiro == null;
 	}
-	public void insereInicio(int info) {
+	public void insereInicio(int info) {//push
 		No novo = new No(info);
 		if(!listaVazia()) {
 			novo.setProximo(this.primeiro);
 		}
 		this.setPrimeiro(novo);
 	}
-	public int removeInicio() {
+	public int removeInicio() { //pop
 		int intAux = this.primeiro.getInfo();
 		setPrimeiro(primeiro.getProximo());//this.primeiro = this.primeiro.getProximo();
 		return intAux;
